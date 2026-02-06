@@ -17,9 +17,9 @@ export async function GET(
       return NextResponse.json({ error: 'Not found' }, { status: 404 })
     }
 
-    if (!question.isActive) {
-      return NextResponse.json({ error: 'Inactive' }, { status: 410 })
-    }
+    // if (!question.isActive) {
+    //   return NextResponse.json({ error: 'Inactive' }, { status: 410 })
+    // }
 
     return NextResponse.json({
       name: question.name,
@@ -46,9 +46,9 @@ export async function POST(
       return NextResponse.json({ error: 'Not found' }, { status: 404 })
     }
 
-    if (!question.isActive) {
-      return NextResponse.json({ error: 'Already answered' }, { status: 410 })
-    }
+    // if (!question.isActive) {
+    //   return NextResponse.json({ error: 'Already answered' }, { status: 410 })
+    // }
 
     // Mark as inactive
     question.isActive = false
