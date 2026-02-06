@@ -14,7 +14,8 @@ export default async function QuestionPage({
     const { slug } = await params
     const question = await Question.findOne({ slug })
 
-    if (!question || !question.isActive) {
+    // if (!question || !question.isActive) {
+    if (!question) {
       notFound()
     }
 
