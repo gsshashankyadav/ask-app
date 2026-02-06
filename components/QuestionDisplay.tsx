@@ -243,7 +243,7 @@ export function QuestionDisplay({ initialData }: { initialData: QuestionData }) 
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.45 }}
     >
-      Your response has been securely recorded. You’re all set.
+      Thank you for your answer! I always knew you would say yes.
     </motion.p>
 
     {/* Action */}
