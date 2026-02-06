@@ -9,8 +9,6 @@ const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400", variable: "--f
 
 export const metadata: Metadata = {
   title: 'Ask Them',
-  description: 'Create playful yes/no questions and share them. The no button will run away.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
